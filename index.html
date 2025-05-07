@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- This page is adapted from w3schools "How to make a link tree website https://www.w3schools.com/howto/howto_website_create_linktree.asp" -->
 <html lang="en">
-<link rel="icon" href="images/icon.png" type="image/x-icon">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -11,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="images/icon.png" type="image/x-icon">
 </head>
 
 <body class="main-text-color">
@@ -29,7 +29,7 @@
     </div>
     <!-- Replace the # inside of the href="#" with your links. -->
     <div class="links-container">
-      <div class="button toggle">Blog post</div>
+      <div class="button toggle"><i class="fa-solid fa-blog"></i> Blog post</div>
       <div class="slidedown">
         <div class="description">
           <h2>Perks of Gaming</h2>
@@ -38,21 +38,43 @@
         </div>
       </div>
 
-      <div class="button toggle">Video</div>
+      <div class="button toggle"><i class="fa-brands fa-youtube"></i> Video</div>
       <div class="slidedown">
         <div class="description">
           <h2>Stardew Valley Year 1 Tips & Tricks</h2>
           <p>Want to turn your tiny starter farm into a money-making machine by Fall? Watch my Stardew guide to help you more money out of Year 1.</p>
-          <a href="https://www.youtube.com/shorts/57WXisM3QFU" class="external-link" target="_blank">Watch</a>
+          
+          <style>
+            .embed-container {
+              position: relative;
+              padding-bottom: 177.78%;
+              height: 0;
+              overflow: hidden;
+              max-width: 100%;
+            }
+          
+            .embed-container iframe,
+            .embed-container object,
+            .embed-container embed {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            }
+          </style>
+          <div class="embed-container">
+            <iframe src="https://www.youtube.com/embed/57WXisM3QFU" frameborder="0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
 
-      <div class="button toggle">Podcast</div>
+      <div class="button toggle"><i class="fa-brands fa-soundcloud"></i> Podcast</div>
       <div class="slidedown">
         <div class="description">
           <h2>The Other Side of Content Creators</h2>
           <p>Can Influencers/Content Creators be authenticate when they have a bunch of followers and sponsorships? Find out more on my podcast!<form action=""></form></p>
-          <a href="https://soundcloud.com/bilal-aridi-95691137/turtles-final-version?si=8ccae9351e8d4527880f9a55c326152b&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="external-link" target="_blank">Listen</a>
+          <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2075997008&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/bilal-aridi-95691137" title="Bilal Aridi" target="_blank" style="color: #cccccc; text-decoration: none;">Bilal Aridi</a> · <a href="https://soundcloud.com/bilal-aridi-95691137/turtles-final-version" title="Turtles Final Version" target="_blank" style="color: #cccccc; text-decoration: none;">Turtles Final Version</a></div>
         </div>
       </div>
     </div>
@@ -63,7 +85,7 @@
     </div>
 
     <div class="links-container">
-      <a href="https://www.linkedin.com/in/luciana-desir-a34b73272/" class="button" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/luciana-desir-a34b73272/" class="button" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
 
   </div>
